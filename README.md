@@ -1,9 +1,5 @@
 # Dashboard Firmware (Stag 13)
 
-Started from `dash-firmware-STAG12` (Endurance dash, state of 4 Nov 2026). The folder and project names (`eez-Stag12`, `Stag12.eez-project`) are unchanged so the build files still match; rename them together when ready.
-
-After cloning, run `git submodule update --init` (CAN definitions and LVGL are submodules).
-
 Dashboard firmware for a STM32F746ZGT connected to two CAN buses (CAN-T and CAN-S, with definitions [here](https://github.com/sufst/can-defs)), using EEZ Studio + LVGL for rendering. 
 
 ## Updating the UI

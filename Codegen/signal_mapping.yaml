@@ -1,0 +1,80 @@
+# Map of Bus -> Signal -> EEZ studio variable name
+# A signal can instead map to {name: <variable>, type: integer} to round a
+# scaled signal to a whole number for display (e.g. SOC sent in 0.5% steps)
+CAN_T:
+  VCU_STATE:
+    vcu_rolling_counter: "vcu_rolling_counter"
+    vcu_ctrl_state: "vcu_ctrl_state"
+    vcu_current_mode: "vcu_current_mode"
+    vcu_requested_mode: "vcu_requested_mode"
+  VCU_Launch_Ctrl:
+    _timeout_ms: 500  # VCU sends it every cycle; quiet longer than this -> "No_Data"
+    vcu_lc_state: "vcu_lc_state"
+    vcu_lc_fault: "vcu_lc_fault"
+    vcu_lc_shadow_mode: "vcu_lc_shadow_mode"
+    vcu_lc_stationary: "vcu_lc_stationary"
+    vcu_lc_arm_progress: "vcu_lc_arm_progress"
+  BMS_PACK_STATE:
+    bms_pack_inst_voltage: "bms_pack_inst_voltage"
+    bms_pack_current: "bms_pack_current"
+    bms_pack_soc: { name: "bms_pack_soc", type: integer }
+  PDM_IN_VOLTAGE:
+    pdm_input_10_voltage: "pdm_input_10_voltage"
+  PM100_INTERNAL_STATES:
+    pm100_vsm_state: "pm100_vsm_state"
+  PM100_Temperature_Set_1:
+    pm100_module_a: "pm100_module_a"
+    pm100_module_b: "pm100_module_b"
+    pm100_module_c: "pm100_module_c"
+    pm100_gate_driver_board: "pm100_gate_driver_board"
+  PM100_Temperature_Set_3:
+    pm100_motor_temperature: "pm100_motor_temperature"
+  BMS_Cell_State:
+    bms_high_temperature: "bms_high_temperature"
+    bms_average_temperature: "bms_average_temperature"
+  VCU_PDM:
+    inverter: "inverter"
+    brakelight: "brakelight"
+    pump: "pump"
+    fan: "fan"
+  PDM_State:
+    pdm_battery_voltage: "pdm_battery_voltage"
+  VCU_Error:
+    vcu_ctrl_error: "vcu_ctrl_error"
+    vcu_scs_error: "vcu_scs_error"
+    vcu_pm100_error: "vcu_pm100_error"
+    vcu_rtcan1_error: "vcu_rtcan1_error"
+    vcu_rtcan2_error: "vcu_rtcan2_error"
+    vcu_canbc_error: "vcu_canbc_error"
+
+CAN_S:
+  WHEEL_SPEEDS:
+    wheel_fl_speed: "wheel_fl_speed"
+    wheel_fr_speed: "wheel_fr_speed"
+    wheel_rl_speed: "wheel_rl_speed"
+    wheel_rr_speed: "wheel_rr_speed"
+  VCU_Sensors:
+    vcu_sagl: "vcu_sagl"
+    vcu_apps: "vcu_apps"
+    vcu_bps: "vcu_bps"
+  LV_Box_Analog:
+    lvbox_pwr: "lvbox_pwr"
+  VCU_Sensors_Raw:
+    vcu_apps1_raw: "vcu_apps1_raw"
+    vcu_apps2_raw: "vcu_apps2_raw"
+    vcu_bps_raw: "vcu_bps_raw"
+  VCU_Temps:
+    vcu_max_temp: "vcu_max_temp"
+  LV_Box_Digital:
+    tap_estops: "tap_estops"
+    imd_fault: "imd_fault"
+    ams_fault: "ams_fault"
+    ts_detected: "ts_detected"
+    tap_latching: "tap_latching"
+    tap_hvd: "tap_hvd"
+  Dash_Sensors_Digital:
+    tap_bots: "tap_bots"
+    tap_estop: "tap_estop"
+    tap_sdc_inertia: "tap_sdc_inertia"
+  Pedal_Box_Digital:
+    bspd_status: "bspd_status"

@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/Dash.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "gdbPath": "gdb-multiarch",
+            "rtos": "FreeRTOS",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f7x.cfg"
+            ]
+        },
+        {
+            "name": "Flash Only",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/Debug/Dash.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "gdbPath": "gdb-multiarch",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f7x.cfg"
+            ],
+            "postLaunchCommands": [
+                "quit"
+            ],
+            "preLaunchTask": "Build"
+        }
+    ]
+}

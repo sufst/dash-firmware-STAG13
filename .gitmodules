@@ -1,0 +1,6 @@
+[submodule "SUFST/Middlewares/can-defs"]
+	path = SUFST/Middlewares/can-defs
+	url = https://github.com/sufst/can-defs
+[submodule "SUFST/Middlewares/lvgl"]
+	path = SUFST/Middlewares/lvgl
+	url = https://github.com/lvgl/lvgl

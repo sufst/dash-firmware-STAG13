@@ -1,7 +1,7 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/2",
-    "selectedGlobalVariableObject": "[Stag13.eez-project]:/variables/globalVariables/39",
+    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/0",
+    "selectedGlobalVariableObject": "[Stag13.eez-project]:/variables/globalVariables/77",
     "selectedThemeObject": "[Stag13.eez-project]:/themes/0",
     "selectedBitmapObject": "[Stag13.eez-project]:/bitmaps/0",
     "subnavigationSelectedItems": {
@@ -185,7 +185,8 @@
                       "enableClose": false,
                       "icon": "svg:variable"
                     }
-                  ]
+                  ],
+                  "active": true
                 }
               ]
             },
@@ -193,6 +194,7 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 54.569561041521695,
+              "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
@@ -230,8 +232,7 @@
                   },
                   "icon": "svg:page"
                 }
-              ],
-              "active": true
+              ]
             },
             {
               "type": "row",
@@ -1106,19 +1107,25 @@
       "selectionBack": {
         "0": {
           "0": {},
-          "3": {},
-          "39": {},
-          "40": {},
-          "45": {},
-          "53": {}
+          "22": {},
+          "32": {},
+          "35": {},
+          "36": {},
+          "41": {},
+          "46": {},
+          "48": {
+            "$selected": true
+          },
+          "51": {},
+          "52": {}
         }
       },
       "transform": {
         "translate": {
-          "x": -307.18024449680286,
-          "y": -212.55442303347846
+          "x": -327.41381110270015,
+          "y": -203.49421320147042
         },
-        "scale": 0.8
+        "scale": 0.75
       },
       "timeline": {
         "isEditorActive": false,
@@ -1129,13 +1136,19 @@
     },
     "[Stag13.eez-project]:/userPages/1[flow-state]": {
       "selectionFront": {},
-      "selectionBack": {},
+      "selectionBack": {
+        "0": {
+          "4": {},
+          "23": {},
+          "31": {}
+        }
+      },
       "transform": {
         "translate": {
-          "x": -341.50000417232513,
-          "y": -167
+          "x": -308.881465005399,
+          "y": -168.53041037258987
         },
-        "scale": 0.8
+        "scale": 0.9
       },
       "timeline": {
         "isEditorActive": false,
@@ -1148,16 +1161,17 @@
       "selectionFront": {},
       "selectionBack": {
         "0": {
-          "27": {},
-          "33": {}
+          "24": {},
+          "30": {},
+          "53": {}
         }
       },
       "transform": {
         "translate": {
-          "x": -310.1190278700419,
-          "y": -185.42857142857144
+          "x": -307.4271628154992,
+          "y": -191.83204061462777
         },
-        "scale": 0.8
+        "scale": 0.75
       },
       "timeline": {
         "isEditorActive": false,
@@ -1171,10 +1185,10 @@
       "selectionBack": {},
       "transform": {
         "translate": {
-          "x": -275,
+          "x": -369.166663646698,
           "y": -170
         },
-        "scale": 0.8
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1191,7 +1205,7 @@
           "x": -321,
           "y": -227
         },
-        "scale": 0.8
+        "scale": 0.9
       },
       "timeline": {
         "isEditorActive": false,
@@ -1214,7 +1228,7 @@
           "x": -323,
           "y": -175.5
         },
-        "scale": 0.8
+        "scale": 0.9
       },
       "timeline": {
         "isEditorActive": false,
@@ -1249,7 +1263,7 @@
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 0.8,
+  "flowZoom": 0.75,
   "implementationLanguage": "C",
   "openDialogDefaultPath": "C:\\Users\\Martin\\Downloads\\Screenshot 2026-07-11 at 01-04-14 Southampton University Formula Student Team.png"
 }

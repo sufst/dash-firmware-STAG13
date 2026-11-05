@@ -6,15 +6,21 @@
 
 #include "main.h"
 #include "can.h"
+#include "can_s.h"
 #include "can_t.h"
 #include "dash_diag.h"
 
 /* VCU_State is broadcast periodically; half a second of silence is treated as a lost link */
 #define VCU_LINK_TIMEOUT_MS 500U
 
+/* Wheel_Speeds comes every 20 ms; after this long without one the lap counter stops adding distance */
+#define WHEEL_SPEEDS_TIMEOUT_MS 200U
+
 static volatile uint32_t rx_dropped = 0;
 static volatile uint32_t last_vcu_state_tick = 0;
 static volatile bool vcu_state_seen = false;
+static volatile uint32_t last_wheel_speeds_tick = 0;
+static volatile bool wheel_speeds_seen = false;
 
 void dash_diag_note_rx(bool is_bus_t, uint32_t id)
 {
@@ -23,6 +29,18 @@ void dash_diag_note_rx(bool is_bus_t, uint32_t id)
         last_vcu_state_tick = HAL_GetTick();
         vcu_state_seen = true;
     }
+    else if (!is_bus_t && (id == CAN_S_WHEEL_SPEEDS_FRAME_ID))
+    {
+        last_wheel_speeds_tick = HAL_GetTick();
+        wheel_speeds_seen = true;
+    }
+}
+
+bool dash_diag_wheel_speeds_fresh(void)
+{
+    /* Read the arrival time before the clock, so a frame landing in between can't make the age wrap */
+    uint32_t last = last_wheel_speeds_tick;
+    return wheel_speeds_seen && ((HAL_GetTick() - last) < WHEEL_SPEEDS_TIMEOUT_MS);
 }
 
 void dash_diag_note_rx_dropped(void)

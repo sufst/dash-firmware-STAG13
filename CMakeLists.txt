@@ -79,8 +79,8 @@ set_target_properties(lvgl_examples lvgl_demos PROPERTIES EXCLUDE_FROM_ALL TRUE)
 
 # EEZ Studio generates one source file per font/image, so pick up whatever is there
 file(GLOB EEZ_UI_SRC CONFIGURE_DEPENDS
-    ${CMAKE_CURRENT_SOURCE_DIR}/eez-Stag12/src/ui/*.c
-    ${CMAKE_CURRENT_SOURCE_DIR}/eez-Stag12/src/ui/*.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/eez-Stag13/src/ui/*.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/eez-Stag13/src/ui/*.cpp
 )
 
 # Source directories
@@ -108,7 +108,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     SUFST/Middlewares/can-defs/out
     Middlewares/TinyUSB/Inc
     ${TINYUSB_INC}
-    eez-Stag12/src/ui
+    eez-Stag13/src/ui
 )
 
 # Colour theme the dash starts in (themes are defined in the EEZ Studio project)
@@ -122,7 +122,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     DASH_THEME="${DASH_THEME}"
 )
 
-set_source_files_properties(eez-Stag12/src/ui/screens.c PROPERTIES
+set_source_files_properties(eez-Stag13/src/ui/screens.c PROPERTIES
     COMPILE_OPTIONS "-include${CMAKE_CURRENT_SOURCE_DIR}/SUFST/Inc/eez_compat.h"
 )
 

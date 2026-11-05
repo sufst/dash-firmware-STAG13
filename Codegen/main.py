@@ -11,7 +11,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 YAML_PATH = os.path.join(REPO_ROOT, 'Codegen/signal_mapping.yaml')
 JINJA_TEMPLATE_PATH = os.path.join(REPO_ROOT, 'Codegen/can_rx_handlers.c.j2')
 JINJA_HEADER_TEMPLATE_PATH = os.path.join(REPO_ROOT, 'Codegen/can_rx_handlers.h.j2')
-EEZ_PROJECT_PATH = os.path.join(REPO_ROOT, 'eez-Stag12/Stag12.eez-project')
+EEZ_PROJECT_PATH = os.path.join(REPO_ROOT, 'eez-Stag13/Stag13.eez-project')
 OUTPUT_C_PATH = os.path.join(REPO_ROOT, 'SUFST/Src/can_rx_handlers.c')
 OUTPUT_H_PATH = os.path.join(REPO_ROOT, 'SUFST/Inc/can_rx_handlers.h')
 

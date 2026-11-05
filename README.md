@@ -3,7 +3,7 @@
 Dashboard firmware for a STM32F746ZGT connected to two CAN buses (CAN-T and CAN-S, with definitions [here](https://github.com/sufst/can-defs)), using EEZ Studio + LVGL for rendering. 
 
 ## Updating the UI
-Open `eez-Stag12/Stag12.eez-project` in EEZ Studio
+Open `eez-Stag13/Stag13.eez-project` in EEZ Studio
 
 ## Adding signals
 1. Open `Codegen/signal_mapping.yaml`

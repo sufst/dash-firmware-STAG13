@@ -1,6 +1,9 @@
-/* Picks the EEZ Studio screen from the VCU's current drive mode (VCU_State.VCU_Current_Mode) */
+/* Picks the EEZ Studio screen: the start-up picture (Splash) for the first splash_ms after power-up, then
+ * the screen for the VCU's current drive mode (VCU_State.VCU_Current_Mode) */
 
 #include <stdint.h>
+
+#include "main.h"
 
 #include "can_rx_handlers.h"
 #include "screen_select.h"
@@ -29,7 +32,22 @@ static enum ScreensEnum screen_for_mode(int32_t mode)
 void screen_select_tick(void)
 {
     static enum ScreensEnum current = SCREEN_ID_MAIN;
-    enum ScreensEnum wanted = screen_for_mode(get_raw_vcu_current_mode());
+    static uint32_t start_ms;
+    static uint8_t started = 0;
+    static uint8_t splash_over = 0;
+
+    if (!started)
+    {
+        start_ms = HAL_GetTick(); /* timed from the first frame, so the picture gets its full time on screen */
+        started = 1;
+    }
+    if (!splash_over)
+    {
+        int32_t splash_ms = splash_time_ms();
+        splash_over = splash_ms <= 0 || (HAL_GetTick() - start_ms) >= (uint32_t)splash_ms;
+    }
+
+    enum ScreensEnum wanted = splash_over ? screen_for_mode(get_raw_vcu_current_mode()) : SCREEN_ID_SPLASH;
 
     if (wanted != current)
     {

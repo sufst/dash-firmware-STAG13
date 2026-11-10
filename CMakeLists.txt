@@ -98,6 +98,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     SUFST/Src/uptime.c
     SUFST/Src/dash_diag.c
     SUFST/Src/screen_select.c
+    SUFST/Src/splash.cpp
     SUFST/Src/warning_levels.cpp
     SUFST/Src/lap_counter.cpp
 )

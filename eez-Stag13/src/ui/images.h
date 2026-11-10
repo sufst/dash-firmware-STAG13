@@ -13,6 +13,7 @@ extern const lv_img_dsc_t img_sponsor_sfs;
 extern const lv_img_dsc_t img_sponsor_vector;
 extern const lv_img_dsc_t img_sponsor_rfpro;
 extern const lv_img_dsc_t img_sponsor_about_energy;
+extern const lv_img_dsc_t img_splash;
 
 #ifndef EXT_IMG_DESC_T
 #define EXT_IMG_DESC_T
@@ -22,7 +23,7 @@ typedef struct _ext_img_desc_t {
 } ext_img_desc_t;
 #endif
 
-extern const ext_img_desc_t images[6];
+extern const ext_img_desc_t images[7];
 
 #ifdef __cplusplus
 }

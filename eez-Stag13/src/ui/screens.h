@@ -17,7 +17,8 @@ enum ScreensEnum {
     SCREEN_ID_DYNO = 4,
     SCREEN_ID_DEBUG = 5,
     SCREEN_ID_SPONSORS = 6,
-    _SCREEN_ID_LAST = 6
+    SCREEN_ID_SPLASH = 7,
+    _SCREEN_ID_LAST = 7
 };
 
 typedef struct _objects_t {
@@ -27,6 +28,7 @@ typedef struct _objects_t {
     lv_obj_t *dyno;
     lv_obj_t *debug;
     lv_obj_t *sponsors;
+    lv_obj_t *splash;
     lv_obj_t *lvbox_pwr;
     lv_obj_t *vcu_state;
     lv_obj_t *inv_state;
@@ -264,6 +266,7 @@ typedef struct _objects_t {
     lv_obj_t *sponsors_logo_about_energy;
     lv_obj_t *sponsors_dot_4;
     lv_obj_t *sponsors_dot_on_4;
+    lv_obj_t *splash_image;
 } objects_t;
 
 extern objects_t objects;
@@ -291,6 +294,10 @@ void tick_screen_debug();
 void create_screen_sponsors();
 void delete_screen_sponsors();
 void tick_screen_sponsors();
+
+void create_screen_splash();
+void delete_screen_splash();
+void tick_screen_splash();
 
 void create_screen_by_id(enum ScreensEnum screenId);
 void delete_screen_by_id(enum ScreensEnum screenId);

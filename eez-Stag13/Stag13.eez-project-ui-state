@@ -1,7 +1,7 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/0",
-    "selectedGlobalVariableObject": "[Stag13.eez-project]:/variables/globalVariables/77",
+    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/2",
+    "selectedGlobalVariableObject": "[Stag13.eez-project]:/variables/globalVariables/76",
     "selectedThemeObject": "[Stag13.eez-project]:/themes/0",
     "selectedBitmapObject": "[Stag13.eez-project]:/bitmaps/0",
     "subnavigationSelectedItems": {
@@ -185,8 +185,7 @@
                       "enableClose": false,
                       "icon": "svg:variable"
                     }
-                  ],
-                  "active": true
+                  ]
                 }
               ]
             },
@@ -194,18 +193,28 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 54.569561041521695,
-              "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
                 {
                   "type": "tab",
-                  "id": "#576565d6-cc4f-492b-9489-89959838145d",
+                  "id": "#f82006e9-ff09-4d48-a19d-a5400c005b6e",
                   "name": "Accel",
                   "component": "editor",
                   "config": {
                     "objectPath": "[Stag13.eez-project]:/userPages/2",
                     "permanent": false
+                  },
+                  "icon": "svg:page"
+                },
+                {
+                  "type": "tab",
+                  "id": "#576565d6-cc4f-492b-9489-89959838145d",
+                  "name": "Skidpad",
+                  "component": "editor",
+                  "config": {
+                    "objectPath": "[Stag13.eez-project]:/userPages/1",
+                    "permanent": true
                   },
                   "icon": "svg:page"
                 },
@@ -232,7 +241,8 @@
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "row",
@@ -1113,19 +1123,17 @@
           "36": {},
           "41": {},
           "46": {},
-          "48": {
-            "$selected": true
-          },
+          "48": {},
           "51": {},
           "52": {}
         }
       },
       "transform": {
         "translate": {
-          "x": -327.41381110270015,
-          "y": -203.49421320147042
+          "x": -278.6680593764545,
+          "y": -130.46754129865772
         },
-        "scale": 0.75
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1145,10 +1153,10 @@
       },
       "transform": {
         "translate": {
-          "x": -308.881465005399,
-          "y": -168.53041037258987
+          "x": -270.2147957558644,
+          "y": -139.53041037258987
         },
-        "scale": 0.9
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1168,10 +1176,10 @@
       },
       "transform": {
         "translate": {
-          "x": -307.4271628154992,
-          "y": -191.83204061462777
+          "x": -285.94592970534313,
+          "y": -145.33178127615804
         },
-        "scale": 0.75
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1205,7 +1213,7 @@
           "x": -321,
           "y": -227
         },
-        "scale": 0.9
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1228,7 +1236,7 @@
           "x": -323,
           "y": -175.5
         },
-        "scale": 0.9
+        "scale": 0.67
       },
       "timeline": {
         "isEditorActive": false,
@@ -1263,7 +1271,7 @@
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
-  "flowZoom": 0.75,
+  "flowZoom": 0.67,
   "implementationLanguage": "C",
   "openDialogDefaultPath": "C:\\Users\\Martin\\Downloads\\Screenshot 2026-07-11 at 01-04-14 Southampton University Formula Student Team.png"
 }

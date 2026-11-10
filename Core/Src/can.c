@@ -26,6 +26,7 @@
 #include "cmsis_os.h"
 #include "can_rx_handlers.h"
 #include "dash_diag.h"
+#include "driver_message.h"
 /* USER CODE END 0 */
 
 CAN_HandleTypeDef hcan1;
@@ -320,6 +321,9 @@ bool can_rx_process_pending(uint32_t timeout_ms)
     {
         return false;
     }
+
+    /* Dash_Message (text for the driver) isn't in can-defs, so it has its own decoder; it can come on either bus */
+    driver_message_handle_frame(frame.id, frame.data, frame.length);
 
     frame.handler(frame.id, frame.data, frame.length);
     return true;

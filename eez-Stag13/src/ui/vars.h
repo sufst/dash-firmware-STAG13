@@ -22,11 +22,13 @@ enum FlowGlobalVariables {
     FLOW_GLOBAL_VARIABLE_MOTOR_CRIT = 6,
     FLOW_GLOBAL_VARIABLE_INV_WARN = 7,
     FLOW_GLOBAL_VARIABLE_INV_CRIT = 8,
-    FLOW_GLOBAL_VARIABLE_DRIVER_MSG = 9,
-    FLOW_GLOBAL_VARIABLE_SLIP_WARN = 10,
-    FLOW_GLOBAL_VARIABLE_TOTAL_LAPS = 11,
-    FLOW_GLOBAL_VARIABLE_LAP_LENGTH = 12,
-    FLOW_GLOBAL_VARIABLE_TC_ON = 13
+    FLOW_GLOBAL_VARIABLE_SLIP_WARN = 9,
+    FLOW_GLOBAL_VARIABLE_TOTAL_LAPS = 10,
+    FLOW_GLOBAL_VARIABLE_LAP_LENGTH = 11,
+    FLOW_GLOBAL_VARIABLE_TC_ON = 12,
+    FLOW_GLOBAL_VARIABLE_DRIVER_MSG_SHOW_MS = 13,
+    FLOW_GLOBAL_VARIABLE_DRIVER_MSG_FLASH_MS = 14,
+    FLOW_GLOBAL_VARIABLE_DRIVER_MSG_BLINK_MS = 15
 };
 
 // Native global variables
@@ -91,6 +93,8 @@ extern const char *get_var_uptime_str();
 extern void set_var_uptime_str(const char *value);
 extern int32_t get_var_bms_pack_soc();
 extern void set_var_bms_pack_soc(int32_t value);
+extern const char *get_var_driver_msg();
+extern void set_var_driver_msg(const char *value);
 extern const char *get_var_vcu_lc_state();
 extern void set_var_vcu_lc_state(const char *value);
 extern const char *get_var_vcu_lc_fault();
@@ -161,6 +165,10 @@ extern int32_t get_var_soc_level();
 extern void set_var_soc_level(int32_t value);
 extern int32_t get_var_soc_target();
 extern void set_var_soc_target(int32_t value);
+extern bool get_var_driver_msg_visible();
+extern void set_var_driver_msg_visible(bool value);
+extern bool get_var_driver_msg_flash();
+extern void set_var_driver_msg_flash(bool value);
 
 #ifdef __cplusplus
 }

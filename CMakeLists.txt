@@ -100,6 +100,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     SUFST/Src/screen_select.c
     SUFST/Src/warning_levels.cpp
     SUFST/Src/lap_counter.cpp
+    SUFST/Src/driver_message.cpp
 )
 
 # Include directories
@@ -122,6 +123,14 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
     CFG_TUSB_MCU=OPT_MCU_STM32F7
     DASH_THEME="${DASH_THEME}"
 )
+
+# Self-test build for trying the driver message pop-up with nothing sending Dash_Message: the dash shows a
+# test message by itself every 20 s (SUFST/Src/driver_message.cpp). Bench only, never for running the car.
+option(DASH_MSG_SELFTEST "Show driver message test pop-ups without a CAN sender (bench only)" OFF)
+if(DASH_MSG_SELFTEST)
+    message("Driver message SELF-TEST build: shows test messages by itself")
+    target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE DRIVER_MSG_SELFTEST=1)
+endif()
 
 set_source_files_properties(eez-Stag13/src/ui/screens.c PROPERTIES
     COMPILE_OPTIONS "-include${CMAKE_CURRENT_SOURCE_DIR}/SUFST/Inc/eez_compat.h"

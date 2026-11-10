@@ -81,6 +81,10 @@ typedef struct _objects_t {
     lv_obj_t *obj10;
     lv_obj_t *obj11;
     lv_obj_t *lap;
+    lv_obj_t *msg_popup;
+    lv_obj_t *msg_popup_text;
+    lv_obj_t *msg_popup_flash;
+    lv_obj_t *msg_popup_flash_text;
     lv_obj_t *skidpad_lvbox_pwr;
     lv_obj_t *skidpad_vcu_state;
     lv_obj_t *skidpad_inv_state;
@@ -129,6 +133,10 @@ typedef struct _objects_t {
     lv_obj_t *skidpad_startup_instructions;
     lv_obj_t *skidpad_soc;
     lv_obj_t *obj22;
+    lv_obj_t *skidpad_msg_popup;
+    lv_obj_t *skidpad_msg_popup_text;
+    lv_obj_t *skidpad_msg_popup_flash;
+    lv_obj_t *skidpad_msg_popup_flash_text;
     lv_obj_t *accel_inv_state;
     lv_obj_t *accel_pdm_11;
     lv_obj_t *obj23;
@@ -191,6 +199,10 @@ typedef struct _objects_t {
     lv_obj_t *accel_vcu_state;
     lv_obj_t *accel_lvbox_pwr;
     lv_obj_t *soc_label;
+    lv_obj_t *accel_msg_popup;
+    lv_obj_t *accel_msg_popup_text;
+    lv_obj_t *accel_msg_popup_flash;
+    lv_obj_t *accel_msg_popup_flash_text;
     lv_obj_t *dyno_title;
     lv_obj_t *obj37;
     lv_obj_t *dyno_counter_caption;

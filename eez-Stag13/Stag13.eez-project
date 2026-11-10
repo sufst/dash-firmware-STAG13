@@ -690,6 +690,55 @@
         "defaultValue": "5000",
         "persistent": false,
         "native": false
+      },
+      {
+        "objID": "93597ce0-6093-4d14-b77a-88445af10f3c",
+        "name": "game_rows",
+        "type": "integer",
+        "defaultValue": "0",
+        "persistent": false,
+        "native": true
+      },
+      {
+        "objID": "89858d2a-932d-4161-ba91-43478d04f07d",
+        "name": "game_best",
+        "type": "integer",
+        "defaultValue": "0",
+        "persistent": false,
+        "native": true
+      },
+      {
+        "objID": "16a595d2-3d13-41dc-ae96-663b9cbb4f5b",
+        "name": "game_text",
+        "type": "string",
+        "size": null,
+        "defaultValue": "\"\"",
+        "persistent": false,
+        "native": true
+      },
+      {
+        "objID": "da16ed32-0697-46a6-a816-78c9cf9de8d6",
+        "name": "game_steer_left",
+        "type": "integer",
+        "defaultValue": "30",
+        "persistent": false,
+        "native": false
+      },
+      {
+        "objID": "72e55a12-ce29-43d6-9826-192e7f7f733f",
+        "name": "game_steer_right",
+        "type": "integer",
+        "defaultValue": "70",
+        "persistent": false,
+        "native": false
+      },
+      {
+        "objID": "4081558f-39dd-4a0d-a71a-23bbbf6384fd",
+        "name": "game_pedal_pct",
+        "type": "integer",
+        "defaultValue": "20",
+        "persistent": false,
+        "native": false
       }
     ],
     "structures": [],
@@ -13464,6 +13513,503 @@
       "componentGroups": [],
       "userProperties": [],
       "name": "Splash",
+      "left": 0,
+      "top": 0,
+      "width": 800,
+      "height": 480,
+      "createAtStart": false,
+      "deleteOnScreenUnload": true
+    },
+    {
+      "objID": "e90147c4-7da5-46f7-87e8-1996ec2492bc",
+      "components": [
+        {
+          "objID": "85144659-765a-46da-9a88-81b3dd91d816",
+          "type": "LVGLScreenWidget",
+          "left": 0,
+          "top": 0,
+          "width": 800,
+          "height": 480,
+          "customInputs": [],
+          "customOutputs": [],
+          "style": {
+            "objID": "793c1842-56da-4a2c-94c2-073607c3cde1",
+            "useStyle": "default",
+            "conditionalStyles": [],
+            "childStyles": []
+          },
+          "timeline": [],
+          "eventHandlers": [],
+          "leftUnit": "px",
+          "topUnit": "px",
+          "widthUnit": "px",
+          "heightUnit": "px",
+          "children": [
+            {
+              "objID": "352b9bce-19f3-459a-8c13-ae9cbdfe2c4b",
+              "type": "LVGLPanelWidget",
+              "left": 230,
+              "top": 14,
+              "width": 340,
+              "height": 452,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "7a4e8bba-fbaa-4046-ba22-a394e690be08",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_well",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "px",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "e705eaa1-3523-41a5-8944-c329b80d0c10",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "bg_color": "Bg",
+                      "bg_opa": 255,
+                      "border_color": "Text",
+                      "border_width": 2,
+                      "radius": 0,
+                      "pad_top": 0,
+                      "pad_bottom": 0,
+                      "pad_left": 0,
+                      "pad_right": 0
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0
+            },
+            {
+              "objID": "d73e053d-5125-488c-b861-918fb597145b",
+              "type": "LVGLLabelWidget",
+              "left": 16,
+              "top": 14,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "366ae7d6-21e4-4b4b-8d0f-5afbfdc480c6",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_title",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "8358848e-ec38-4946-a340-75af29547515",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_46",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "PIT\\nSTACK",
+              "textType": "literal",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": true
+            },
+            {
+              "objID": "37a8fb9b-ffd2-4c29-84a8-110a00f4d782",
+              "type": "LVGLLabelWidget",
+              "left": 16,
+              "top": 196,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "3b630e1a-995a-4942-b277-f9d8cb96437e",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_rows_label",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "ffc901e3-f3ea-4b33-99fd-d338b1c371b9",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_22",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "ROWS",
+              "textType": "literal",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": true
+            },
+            {
+              "objID": "6714887a-f909-4b85-9f84-67cd91952ad8",
+              "type": "LVGLLabelWidget",
+              "left": 16,
+              "top": 222,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "d07eb32e-903d-4ba3-ad36-4d8f78251437",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_rows_value",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "e30931ba-76fd-4187-a3ec-0a4ff02902b3",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_70",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "game_rows",
+              "textType": "expression",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": false,
+              "previewValue": "12"
+            },
+            {
+              "objID": "c530706f-685d-4c5b-a462-9285344146c9",
+              "type": "LVGLLabelWidget",
+              "left": 16,
+              "top": 344,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "64eecbbc-cf2f-49c8-a366-a783c2fab988",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_best_label",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "0cb35f60-d9f8-40bb-a63f-680a6b584080",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_22",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "BEST",
+              "textType": "literal",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": true
+            },
+            {
+              "objID": "08e3cb35-bf41-4dd9-9c44-087c1cc6eba9",
+              "type": "LVGLLabelWidget",
+              "left": 16,
+              "top": 370,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "e76c7a1a-4d2f-4e95-9f33-94b283564f88",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_best_value",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "6888a78a-ea07-462c-927d-f061b79fd3eb",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_46",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "game_best",
+              "textType": "expression",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": false,
+              "previewValue": "31"
+            },
+            {
+              "objID": "6629c82e-23d0-4be8-9a65-6276571fdf73",
+              "type": "LVGLLabelWidget",
+              "left": 586,
+              "top": 14,
+              "width": 200,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "506e11d4-668f-4c51-9b0f-49fb3ead051d",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_help",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "b0918f4e-b650-4ae3-b2b2-eee06d692c67",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Text",
+                      "text_font": "b612_22",
+                      "text_align": "LEFT"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "STEER\\nmove\\n\\nBRAKE\\nturn\\n\\nTHROTTLE\\ndrop",
+              "textType": "literal",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": true
+            },
+            {
+              "objID": "ec33ddc5-4a2c-40e7-81de-95567a7b3f98",
+              "type": "LVGLLabelWidget",
+              "left": 240,
+              "top": 180,
+              "width": 320,
+              "height": 30,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "0787bf75-4487-49dd-aeb2-e4721a01023c",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "game_msg",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlag": "game_text == \"\"",
+              "hiddenFlagType": "expression",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "679492f1-0c98-437b-81bf-6f6f7a4ade72",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "Crit",
+                      "text_font": "b612_30",
+                      "text_align": "CENTER",
+                      "bg_color": "Bg",
+                      "bg_opa": 255,
+                      "pad_top": 12,
+                      "pad_bottom": 12
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "game_text",
+              "textType": "expression",
+              "longMode": "WRAP",
+              "recolor": false,
+              "useStaticText": false,
+              "previewValue": "BRAKE TO START"
+            }
+          ],
+          "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER",
+          "hiddenFlagType": "literal",
+          "clickableFlag": true,
+          "clickableFlagType": "literal",
+          "checkedStateType": "literal",
+          "disabledStateType": "literal",
+          "states": "",
+          "localStyles": {
+            "objID": "30763640-452f-4de7-a96d-c1bdc3fd4b25",
+            "definition": {
+              "MAIN": {
+                "DEFAULT": {
+                  "bg_color": "Bg"
+                }
+              },
+              "SCROLLBAR": {
+                "DEFAULT": {
+                  "bg_opa": 0,
+                  "blend_mode": "NORMAL"
+                }
+              }
+            }
+          },
+          "groupIndex": 0
+        }
+      ],
+      "connectionLines": [],
+      "localVariables": [],
+      "componentGroups": [],
+      "userProperties": [],
+      "name": "Game",
       "left": 0,
       "top": 0,
       "width": 800,

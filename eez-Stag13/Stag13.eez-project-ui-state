@@ -185,8 +185,7 @@
                       "enableClose": false,
                       "icon": "svg:variable"
                     }
-                  ],
-                  "active": true
+                  ]
                 }
               ]
             },
@@ -201,10 +200,10 @@
                 {
                   "type": "tab",
                   "id": "#576565d6-cc4f-492b-9489-89959838145d",
-                  "name": "Accel",
+                  "name": "Debug",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[Stag13.eez-project]:/userPages/2",
+                    "objectPath": "[Stag13.eez-project]:/userPages/4",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -232,7 +231,8 @@
                   },
                   "icon": "svg:page"
                 }
-              ]
+              ],
+              "active": true
             },
             {
               "type": "row",
@@ -1113,11 +1113,12 @@
           "36": {},
           "41": {},
           "46": {},
-          "48": {
-            "$selected": true
-          },
+          "48": {},
           "51": {},
-          "52": {}
+          "52": {},
+          "53": {
+            "$selected": true
+          }
         }
       },
       "transform": {
@@ -1205,7 +1206,7 @@
           "x": -321,
           "y": -227
         },
-        "scale": 0.9
+        "scale": 0.75
       },
       "timeline": {
         "isEditorActive": false,
@@ -1228,7 +1229,24 @@
           "x": -323,
           "y": -175.5
         },
-        "scale": 0.9
+        "scale": 0.75
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
+    },
+    "[Stag13.eez-project]:/userPages/6[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {},
+      "transform": {
+        "translate": {
+          "x": -323,
+          "y": -240
+        },
+        "scale": 0.75
       },
       "timeline": {
         "isEditorActive": false,

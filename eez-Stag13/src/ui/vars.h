@@ -27,7 +27,10 @@ enum FlowGlobalVariables {
     FLOW_GLOBAL_VARIABLE_TOTAL_LAPS = 11,
     FLOW_GLOBAL_VARIABLE_LAP_LENGTH = 12,
     FLOW_GLOBAL_VARIABLE_TC_ON = 13,
-    FLOW_GLOBAL_VARIABLE_SPLASH_MS = 14
+    FLOW_GLOBAL_VARIABLE_SPLASH_MS = 14,
+    FLOW_GLOBAL_VARIABLE_GAME_STEER_LEFT = 15,
+    FLOW_GLOBAL_VARIABLE_GAME_STEER_RIGHT = 16,
+    FLOW_GLOBAL_VARIABLE_GAME_PEDAL_PCT = 17
 };
 
 // Native global variables
@@ -162,6 +165,12 @@ extern int32_t get_var_soc_level();
 extern void set_var_soc_level(int32_t value);
 extern int32_t get_var_soc_target();
 extern void set_var_soc_target(int32_t value);
+extern int32_t get_var_game_rows();
+extern void set_var_game_rows(int32_t value);
+extern int32_t get_var_game_best();
+extern void set_var_game_best(int32_t value);
+extern const char *get_var_game_text();
+extern void set_var_game_text(const char *value);
 
 #ifdef __cplusplus
 }

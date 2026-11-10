@@ -32,6 +32,7 @@
 #include "ui.h"
 #include "screen_select.h"
 #include "lap_counter.h"
+#include "pit_stack_fw.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -223,6 +224,7 @@ void StartDefaultTask(void *argument)
     lv_tick_inc(5);
     screen_select_tick();
     lap_counter_tick();
+    pit_stack_tick();
     ui_tick();
     lv_timer_handler();
     osDelay(5);

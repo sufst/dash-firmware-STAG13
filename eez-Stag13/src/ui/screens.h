@@ -18,7 +18,8 @@ enum ScreensEnum {
     SCREEN_ID_DEBUG = 5,
     SCREEN_ID_SPONSORS = 6,
     SCREEN_ID_SPLASH = 7,
-    _SCREEN_ID_LAST = 7
+    SCREEN_ID_GAME = 8,
+    _SCREEN_ID_LAST = 8
 };
 
 typedef struct _objects_t {
@@ -29,6 +30,7 @@ typedef struct _objects_t {
     lv_obj_t *debug;
     lv_obj_t *sponsors;
     lv_obj_t *splash;
+    lv_obj_t *game;
     lv_obj_t *lvbox_pwr;
     lv_obj_t *vcu_state;
     lv_obj_t *inv_state;
@@ -267,6 +269,14 @@ typedef struct _objects_t {
     lv_obj_t *sponsors_dot_4;
     lv_obj_t *sponsors_dot_on_4;
     lv_obj_t *splash_image;
+    lv_obj_t *game_well;
+    lv_obj_t *game_title;
+    lv_obj_t *game_rows_label;
+    lv_obj_t *game_rows_value;
+    lv_obj_t *game_best_label;
+    lv_obj_t *game_best_value;
+    lv_obj_t *game_help;
+    lv_obj_t *game_msg;
 } objects_t;
 
 extern objects_t objects;
@@ -298,6 +308,10 @@ void tick_screen_sponsors();
 void create_screen_splash();
 void delete_screen_splash();
 void tick_screen_splash();
+
+void create_screen_game();
+void delete_screen_game();
+void tick_screen_game();
 
 void create_screen_by_id(enum ScreensEnum screenId);
 void delete_screen_by_id(enum ScreensEnum screenId);

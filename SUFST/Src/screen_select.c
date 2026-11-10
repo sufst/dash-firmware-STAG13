@@ -6,6 +6,7 @@
 #include "main.h"
 
 #include "can_rx_handlers.h"
+#include "pit_stack_fw.h"
 #include "screen_select.h"
 #include "screens.h"
 #include "ui.h"
@@ -19,8 +20,9 @@ static enum ScreensEnum screen_for_mode(int32_t mode)
     case 2:  return SCREEN_ID_SKIDPAD; /* Max */
     case 3:  return SCREEN_ID_ACCEL;   /* Launch_Ctrl */
     case 6:  return SCREEN_ID_DYNO;    /* Remote_Ctrl */
-    case 7:
-    case 8:  return SCREEN_ID_DEBUG;    /* Undefined */
+    case 7:  return SCREEN_ID_DEBUG;    /* Undefined */
+    case 8:                             /* Undefined: the game, but only with the car parked and dead */
+        return pit_stack_allowed() ? SCREEN_ID_GAME : SCREEN_ID_DEBUG;
     case 9:  return SCREEN_ID_SPONSORS; /* Undefined: car on show */
     case 10:
     case 11:

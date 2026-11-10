@@ -12,8 +12,8 @@
 
 objects_t objects;
 
-static const char *screen_names[] = { "Main", "Skidpad", "Accel", "Dyno", "Debug", "Sponsors", "Splash" };
-static const char *object_names[] = { "main", "skidpad", "accel", "dyno", "debug", "sponsors", "splash", "lvbox_pwr", "vcu_state", "inv_state", "pdm_11", "obj0", "lap_number", "inverter_on", "inverter_off", "pumps_on", "pumps_off", "fans_on", "fans_off", "tc_on", "tc_off", "battery_ok", "battery_warn", "battery_crit", "motor_ok", "motor_warn", "motor_cit", "inverter_ok", "inverter_warn", "inverter_cit", "obj1", "inverter_temp", "inverter_temp_4", "inverter_temp_5", "motor_temp", "inverter_temp_6", "battery_temp", "obj2", "obj3", "obj4", "obj5", "obj6", "obj7", "obj8", "obj9", "soc_percent", "soc_percent_warn", "soc_percent_crit", "mode", "inverter_switch_label", "pumps_switch_label", "fans_switch_label", "tc_switch_label", "startup_instructions", "soc_target_text", "soc_target_text_neg", "soc", "soc__", "obj10", "obj11", "lap", "skidpad_lvbox_pwr", "skidpad_vcu_state", "skidpad_inv_state", "skidpad_pdm_11", "obj12", "skidpad_inverter_on", "skidpad_inverter_off", "skidpad_pumps_on", "skidpad_pumps_off", "skidpad_fans_on", "skidpad_fans_off", "skidpad_tc_on", "skidpad_tc_off", "skidpad_battery_ok", "skidpad_battery_warn", "skidpad_battery_crit", "skidpad_motor_ok", "skidpad_motor_warn", "skidpad_motor_cit", "skidpad_inverter_ok", "skidpad_inverter_warn", "skidpad_inverter_cit", "obj13", "skidpad_inverter_temp", "skidpad_inverter_temp_4", "skidpad_inverter_temp_5", "skidpad_motor_temp", "skidpad_inverter_temp_6", "skidpad_battery_temp", "obj14", "obj15", "obj16", "obj17", "obj18", "obj19", "obj20", "obj21", "skidpad_soc_percent", "skidpad_soc_percent_warn", "skidpad_soc_percent_crit", "skidpad_mode", "skidpad_inverter_switch_label", "skidpad_pumps_switch_label", "skidpad_fans_switch_label", "skidpad_tc_switch_label", "skidpad_startup_instructions", "skidpad_soc", "obj22", "accel_inv_state", "accel_pdm_11", "obj23", "obj24", "accel_inverter_on", "accel_inverter_off", "accel_pumps_on", "accel_pumps_off", "accel_fans_on", "accel_fans_off", "accel_tc_on", "accel_tc_off", "accel_battery_ok", "accel_battery_warn", "accel_battery_crit", "accel_motor_ok", "accel_motor_warn", "accel_motor_cit", "accel_inverter_ok", "accel_inverter_warn", "accel_inverter_cit", "obj25", "accel_inverter_temp", "accel_inverter_temp_4", "accel_inverter_temp_5", "accel_motor_temp", "accel_inverter_temp_6", "accel_battery_temp", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "obj32", "accel_soc_percent", "accel_soc_percent_warn", "accel_soc_percent_crit", "accel_mode", "accel_inverter_switch_label", "accel_pumps_switch_label", "accel_fans_switch_label", "accel_tc_switch_label", "obj33", "obj34", "obj35", "accel_launch_header", "obj36", "accel_startup_instructions", "accel_lc_status", "accel_lc_status_go", "accel_lc_status_fault", "accel_lc_hint", "accel_lc_arm_bar", "accel_lc_fault_reason", "accel_lc_shadow", "accel_slip_warn", "accel_speed", "accel_slip", "accel_vcu_state", "accel_lvbox_pwr", "soc_label", "dyno_title", "obj37", "dyno_counter_caption", "dyno_counter", "obj38", "dyno_state_caption", "dyno_state", "dyno_no_vcu", "debug_title", "debug_vcu", "debug_link_ok", "debug_link_lost", "obj39", "obj40", "obj41", "obj42", "obj43", "obj44", "obj45", "obj46", "obj47", "obj48", "obj49", "obj50", "obj51", "obj52", "obj53", "obj54", "obj55", "obj56", "obj57", "obj58", "obj59", "obj60", "obj61", "obj62", "obj63", "obj64", "obj65", "obj66", "obj67", "obj68", "obj69", "obj70", "obj71", "obj72", "obj73", "obj74", "obj75", "obj76", "obj77", "obj78", "obj79", "obj80", "obj81", "obj82", "sponsors_title", "obj83", "sponsors_logo_uos", "sponsors_dot_0", "sponsors_dot_on_0", "sponsors_logo_sfs", "sponsors_dot_1", "sponsors_dot_on_1", "sponsors_logo_vector", "sponsors_dot_2", "sponsors_dot_on_2", "sponsors_logo_rfpro", "sponsors_dot_3", "sponsors_dot_on_3", "sponsors_logo_about_energy", "sponsors_dot_4", "sponsors_dot_on_4", "splash_image" };
+static const char *screen_names[] = { "Main", "Skidpad", "Accel", "Dyno", "Debug", "Sponsors", "Splash", "Game" };
+static const char *object_names[] = { "main", "skidpad", "accel", "dyno", "debug", "sponsors", "splash", "game", "lvbox_pwr", "vcu_state", "inv_state", "pdm_11", "obj0", "lap_number", "inverter_on", "inverter_off", "pumps_on", "pumps_off", "fans_on", "fans_off", "tc_on", "tc_off", "battery_ok", "battery_warn", "battery_crit", "motor_ok", "motor_warn", "motor_cit", "inverter_ok", "inverter_warn", "inverter_cit", "obj1", "inverter_temp", "inverter_temp_4", "inverter_temp_5", "motor_temp", "inverter_temp_6", "battery_temp", "obj2", "obj3", "obj4", "obj5", "obj6", "obj7", "obj8", "obj9", "soc_percent", "soc_percent_warn", "soc_percent_crit", "mode", "inverter_switch_label", "pumps_switch_label", "fans_switch_label", "tc_switch_label", "startup_instructions", "soc_target_text", "soc_target_text_neg", "soc", "soc__", "obj10", "obj11", "lap", "skidpad_lvbox_pwr", "skidpad_vcu_state", "skidpad_inv_state", "skidpad_pdm_11", "obj12", "skidpad_inverter_on", "skidpad_inverter_off", "skidpad_pumps_on", "skidpad_pumps_off", "skidpad_fans_on", "skidpad_fans_off", "skidpad_tc_on", "skidpad_tc_off", "skidpad_battery_ok", "skidpad_battery_warn", "skidpad_battery_crit", "skidpad_motor_ok", "skidpad_motor_warn", "skidpad_motor_cit", "skidpad_inverter_ok", "skidpad_inverter_warn", "skidpad_inverter_cit", "obj13", "skidpad_inverter_temp", "skidpad_inverter_temp_4", "skidpad_inverter_temp_5", "skidpad_motor_temp", "skidpad_inverter_temp_6", "skidpad_battery_temp", "obj14", "obj15", "obj16", "obj17", "obj18", "obj19", "obj20", "obj21", "skidpad_soc_percent", "skidpad_soc_percent_warn", "skidpad_soc_percent_crit", "skidpad_mode", "skidpad_inverter_switch_label", "skidpad_pumps_switch_label", "skidpad_fans_switch_label", "skidpad_tc_switch_label", "skidpad_startup_instructions", "skidpad_soc", "obj22", "accel_inv_state", "accel_pdm_11", "obj23", "obj24", "accel_inverter_on", "accel_inverter_off", "accel_pumps_on", "accel_pumps_off", "accel_fans_on", "accel_fans_off", "accel_tc_on", "accel_tc_off", "accel_battery_ok", "accel_battery_warn", "accel_battery_crit", "accel_motor_ok", "accel_motor_warn", "accel_motor_cit", "accel_inverter_ok", "accel_inverter_warn", "accel_inverter_cit", "obj25", "accel_inverter_temp", "accel_inverter_temp_4", "accel_inverter_temp_5", "accel_motor_temp", "accel_inverter_temp_6", "accel_battery_temp", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "obj32", "accel_soc_percent", "accel_soc_percent_warn", "accel_soc_percent_crit", "accel_mode", "accel_inverter_switch_label", "accel_pumps_switch_label", "accel_fans_switch_label", "accel_tc_switch_label", "obj33", "obj34", "obj35", "accel_launch_header", "obj36", "accel_startup_instructions", "accel_lc_status", "accel_lc_status_go", "accel_lc_status_fault", "accel_lc_hint", "accel_lc_arm_bar", "accel_lc_fault_reason", "accel_lc_shadow", "accel_slip_warn", "accel_speed", "accel_slip", "accel_vcu_state", "accel_lvbox_pwr", "soc_label", "dyno_title", "obj37", "dyno_counter_caption", "dyno_counter", "obj38", "dyno_state_caption", "dyno_state", "dyno_no_vcu", "debug_title", "debug_vcu", "debug_link_ok", "debug_link_lost", "obj39", "obj40", "obj41", "obj42", "obj43", "obj44", "obj45", "obj46", "obj47", "obj48", "obj49", "obj50", "obj51", "obj52", "obj53", "obj54", "obj55", "obj56", "obj57", "obj58", "obj59", "obj60", "obj61", "obj62", "obj63", "obj64", "obj65", "obj66", "obj67", "obj68", "obj69", "obj70", "obj71", "obj72", "obj73", "obj74", "obj75", "obj76", "obj77", "obj78", "obj79", "obj80", "obj81", "obj82", "sponsors_title", "obj83", "sponsors_logo_uos", "sponsors_dot_0", "sponsors_dot_on_0", "sponsors_logo_sfs", "sponsors_dot_1", "sponsors_dot_on_1", "sponsors_logo_vector", "sponsors_dot_2", "sponsors_dot_on_2", "sponsors_logo_rfpro", "sponsors_dot_3", "sponsors_dot_on_3", "sponsors_logo_about_energy", "sponsors_dot_4", "sponsors_dot_on_4", "splash_image", "game_well", "game_title", "game_rows_label", "game_rows_value", "game_best_label", "game_best_value", "game_help", "game_msg" };
 
 //
 // Event handlers
@@ -4507,6 +4507,183 @@ void tick_screen_splash() {
     (void)flowState;
 }
 
+void create_screen_game() {
+    void *flowState = getFlowState(0, 7);
+    (void)flowState;
+    lv_obj_t *obj = lv_obj_create(0);
+    objects.game = obj;
+    lv_obj_set_pos(obj, 0, 0);
+    lv_obj_set_size(obj, 800, 480);
+    lv_obj_clear_flag(obj, LV_OBJ_FLAG_SCROLLABLE);
+    lv_obj_set_style_bg_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(obj, 0, LV_PART_SCROLLBAR | LV_STATE_DEFAULT);
+    lv_obj_set_style_blend_mode(obj, LV_BLEND_MODE_NORMAL, LV_PART_SCROLLBAR | LV_STATE_DEFAULT);
+    {
+        lv_obj_t *parent_obj = obj;
+        {
+            // game_well
+            lv_obj_t *obj = lv_obj_create(parent_obj);
+            objects.game_well = obj;
+            lv_obj_set_pos(obj, 230, 14);
+            lv_obj_set_size(obj, 340, 452);
+            lv_obj_clear_flag(obj, LV_OBJ_FLAG_CLICKABLE|LV_OBJ_FLAG_SCROLLABLE);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_opa(obj, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_border_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_border_width(obj, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_radius(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_top(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_bottom(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_left(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_right(obj, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+        }
+        {
+            // game_title
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_title = obj;
+            lv_obj_set_pos(obj, 16, 14);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_46, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text_static(obj, "PIT\nSTACK");
+        }
+        {
+            // game_rows_label
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_rows_label = obj;
+            lv_obj_set_pos(obj, 16, 196);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_22, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text_static(obj, "ROWS");
+        }
+        {
+            // game_rows_value
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_rows_value = obj;
+            lv_obj_set_pos(obj, 16, 222);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_70, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "");
+        }
+        {
+            // game_best_label
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_best_label = obj;
+            lv_obj_set_pos(obj, 16, 344);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_22, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text_static(obj, "BEST");
+        }
+        {
+            // game_best_value
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_best_value = obj;
+            lv_obj_set_pos(obj, 16, 370);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_46, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "");
+        }
+        {
+            // game_help
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_help = obj;
+            lv_obj_set_pos(obj, 586, 14);
+            lv_obj_set_size(obj, 200, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_22, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text_static(obj, "STEER\nmove\n\nBRAKE\nturn\n\nTHROTTLE\ndrop");
+        }
+        {
+            // game_msg
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.game_msg = obj;
+            lv_obj_set_pos(obj, 240, 180);
+            lv_obj_set_size(obj, 320, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][4]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_30, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_color(obj, lv_color_hex(theme_colors[eez_flow_get_selected_theme_index()][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_bg_opa(obj, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_top(obj, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_pad_bottom(obj, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "");
+        }
+    }
+    
+    eez_flow_delete_screen_on_unload(SCREEN_ID_GAME - 1);
+    
+    tick_screen_game();
+}
+
+void delete_screen_game() {
+    lv_obj_del(objects.game);
+    objects.game = 0;
+    objects.game_well = 0;
+    objects.game_title = 0;
+    objects.game_rows_label = 0;
+    objects.game_rows_value = 0;
+    objects.game_best_label = 0;
+    objects.game_best_value = 0;
+    objects.game_help = 0;
+    objects.game_msg = 0;
+    deletePageFlowState(7);
+}
+
+void tick_screen_game() {
+    void *flowState = getFlowState(0, 7);
+    (void)flowState;
+    {
+        const char *new_val = evalTextProperty(flowState, 4, 3, "Failed to evaluate Text in Label widget");
+        const char *cur_val = lv_label_get_text(objects.game_rows_value);
+        if (strcmp(new_val, cur_val) != 0) {
+            tick_value_change_obj = objects.game_rows_value;
+            lv_label_set_text(objects.game_rows_value, new_val);
+            tick_value_change_obj = NULL;
+        }
+    }
+    {
+        const char *new_val = evalTextProperty(flowState, 6, 3, "Failed to evaluate Text in Label widget");
+        const char *cur_val = lv_label_get_text(objects.game_best_value);
+        if (strcmp(new_val, cur_val) != 0) {
+            tick_value_change_obj = objects.game_best_value;
+            lv_label_set_text(objects.game_best_value, new_val);
+            tick_value_change_obj = NULL;
+        }
+    }
+    {
+        const char *new_val = evalTextProperty(flowState, 8, 4, "Failed to evaluate Text in Label widget");
+        const char *cur_val = lv_label_get_text(objects.game_msg);
+        if (strcmp(new_val, cur_val) != 0) {
+            tick_value_change_obj = objects.game_msg;
+            lv_label_set_text(objects.game_msg, new_val);
+            tick_value_change_obj = NULL;
+        }
+    }
+    {
+        bool new_val = evalBooleanProperty(flowState, 8, 3, "Failed to evaluate Hidden flag");
+        bool cur_val = lv_obj_has_flag(objects.game_msg, LV_OBJ_FLAG_HIDDEN);
+        if (new_val != cur_val) {
+            tick_value_change_obj = objects.game_msg;
+            if (new_val) {
+                lv_obj_add_flag(objects.game_msg, LV_OBJ_FLAG_HIDDEN);
+            } else {
+                lv_obj_clear_flag(objects.game_msg, LV_OBJ_FLAG_HIDDEN);
+            }
+            tick_value_change_obj = NULL;
+        }
+    }
+}
+
 typedef void (*create_screen_func_t)();
 create_screen_func_t create_screen_funcs[] = {
     create_screen_main,
@@ -4516,6 +4693,7 @@ create_screen_func_t create_screen_funcs[] = {
     create_screen_debug,
     create_screen_sponsors,
     create_screen_splash,
+    create_screen_game,
 };
 void create_screen(int screen_index) {
     create_screen_funcs[screen_index]();
@@ -4533,6 +4711,7 @@ delete_screen_func_t delete_screen_funcs[] = {
     delete_screen_debug,
     delete_screen_sponsors,
     delete_screen_splash,
+    delete_screen_game,
 };
 void delete_screen(int screen_index) {
     delete_screen_funcs[screen_index]();
@@ -4550,9 +4729,10 @@ tick_screen_func_t tick_screen_funcs[] = {
     tick_screen_debug,
     tick_screen_sponsors,
     tick_screen_splash,
+    tick_screen_game,
 };
 void tick_screen(int screen_index) {
-    if (screen_index >= 0 && screen_index < 7) {
+    if (screen_index >= 0 && screen_index < 8) {
         tick_screen_funcs[screen_index]();
     }
 }
@@ -4899,6 +5079,19 @@ void change_color_theme(uint32_t theme_index) {
         if (objects.obj81) lv_obj_set_style_text_color(objects.obj81, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
         if (objects.obj82) lv_obj_set_style_text_color(objects.obj82, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
     }
+    {
+        if (objects.game) lv_obj_set_style_bg_color(objects.game, lv_color_hex(theme_colors[theme_index][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_well) lv_obj_set_style_bg_color(objects.game_well, lv_color_hex(theme_colors[theme_index][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_well) lv_obj_set_style_border_color(objects.game_well, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_title) lv_obj_set_style_text_color(objects.game_title, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_rows_label) lv_obj_set_style_text_color(objects.game_rows_label, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_rows_value) lv_obj_set_style_text_color(objects.game_rows_value, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_best_label) lv_obj_set_style_text_color(objects.game_best_label, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_best_value) lv_obj_set_style_text_color(objects.game_best_value, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_help) lv_obj_set_style_text_color(objects.game_help, lv_color_hex(theme_colors[theme_index][1]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_msg) lv_obj_set_style_text_color(objects.game_msg, lv_color_hex(theme_colors[theme_index][4]), LV_PART_MAIN | LV_STATE_DEFAULT);
+        if (objects.game_msg) lv_obj_set_style_bg_color(objects.game_msg, lv_color_hex(theme_colors[theme_index][0]), LV_PART_MAIN | LV_STATE_DEFAULT);
+    }
     if (objects.main) lv_obj_invalidate(objects.main);
     if (objects.skidpad) lv_obj_invalidate(objects.skidpad);
     if (objects.accel) lv_obj_invalidate(objects.accel);
@@ -4906,6 +5099,7 @@ void change_color_theme(uint32_t theme_index) {
     if (objects.debug) lv_obj_invalidate(objects.debug);
     if (objects.sponsors) lv_obj_invalidate(objects.sponsors);
     if (objects.splash) lv_obj_invalidate(objects.splash);
+    if (objects.game) lv_obj_invalidate(objects.game);
 }
 static const char *theme_names[] = { "dash-white-bg", "dash-black-bg" };
 uint32_t theme_colors[2][11] = {

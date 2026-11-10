@@ -13429,16 +13429,16 @@
           "heightUnit": "px",
           "children": [
             {
-              "objID": "58f9915d-e91a-4d08-92c0-91d3165f216e",
+              "objID": "005e2366-30e6-4e2b-b3bb-bed914649da7",
               "type": "LVGLImageWidget",
-              "left": 280,
+              "left": 120,
               "top": 120,
               "width": 240,
               "height": 240,
               "customInputs": [],
               "customOutputs": [],
               "style": {
-                "objID": "bc0615f3-3fd7-47ec-b736-1e9cd58cad05",
+                "objID": "eeaad9a7-2d43-47ef-ad03-a51e8970cf5d",
                 "useStyle": "default",
                 "conditionalStyles": [],
                 "childStyles": []
@@ -13464,7 +13464,7 @@
               "disabledStateType": "literal",
               "states": "",
               "localStyles": {
-                "objID": "34767932-997a-4d74-afc4-dfe900c7e722",
+                "objID": "0fb401a7-6e11-425b-bfd5-7b55416b4442",
                 "definition": {}
               },
               "group": "",
@@ -13480,6 +13480,60 @@
               "value": 0,
               "valueType": "literal",
               "previewValue": 0
+            },
+            {
+              "objID": "208223cb-f6aa-449d-a1df-6a62c25ff3b9",
+              "type": "LVGLLabelWidget",
+              "left": 490,
+              "top": 170,
+              "width": 300,
+              "height": 140,
+              "customInputs": [],
+              "customOutputs": [],
+              "style": {
+                "objID": "49fc6a7e-42ff-4b7e-a2bd-1f65a3be65fd",
+                "useStyle": "default",
+                "conditionalStyles": [],
+                "childStyles": []
+              },
+              "timeline": [],
+              "eventHandlers": [],
+              "identifier": "splash_instructions",
+              "leftUnit": "px",
+              "topUnit": "px",
+              "widthUnit": "px",
+              "heightUnit": "content",
+              "children": [],
+              "widgetFlags": "CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "hiddenFlagType": "literal",
+              "clickableFlagType": "literal",
+              "flagScrollbarMode": "",
+              "flagScrollDirection": "",
+              "scrollSnapX": "",
+              "scrollSnapY": "",
+              "checkedStateType": "literal",
+              "disabledStateType": "literal",
+              "states": "",
+              "localStyles": {
+                "objID": "dbadf78b-ba54-48b4-8248-154d3fa72aec",
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "text_color": "#FFFFFF",
+                      "text_font": "b612_36",
+                      "text_align": "CENTER"
+                    }
+                  }
+                }
+              },
+              "group": "",
+              "groupIndex": 0,
+              "text": "(vcu_ctrl_state == \"TS Button Wait\") ? \"Press TS_ON (left)\" : (vcu_ctrl_state == \"Wait Neg AIR\" || vcu_ctrl_state == \"Precharge Wait\") ? \"Precharging...\" : (vcu_ctrl_state == \"R2D Wait\") ? \"Press R2D (right)\" : (vcu_ctrl_state == \"TS Run Fault\") ? \"Fault: Press TS_OFF (left)\" : \"\"",
+              "textType": "expression",
+              "longMode": "WRAP",
+              "recolor": false,
+              "previewValue": "Press TS_ON (left)",
+              "useStaticText": true
             }
           ],
           "widgetFlags": "CLICKABLE|PRESS_LOCK|CLICK_FOCUSABLE|GESTURE_BUBBLE|SNAPPABLE|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER",

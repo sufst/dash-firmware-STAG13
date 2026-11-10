@@ -13,7 +13,7 @@
 objects_t objects;
 
 static const char *screen_names[] = { "Main", "Skidpad", "Accel", "Dyno", "Debug", "Sponsors", "Splash", "Game" };
-static const char *object_names[] = { "main", "skidpad", "accel", "dyno", "debug", "sponsors", "splash", "game", "lvbox_pwr", "vcu_state", "inv_state", "pdm_11", "obj0", "lap_number", "inverter_on", "inverter_off", "pumps_on", "pumps_off", "fans_on", "fans_off", "tc_on", "tc_off", "battery_ok", "battery_warn", "battery_crit", "motor_ok", "motor_warn", "motor_cit", "inverter_ok", "inverter_warn", "inverter_cit", "obj1", "inverter_temp", "inverter_temp_4", "inverter_temp_5", "motor_temp", "inverter_temp_6", "battery_temp", "obj2", "obj3", "obj4", "obj5", "obj6", "obj7", "obj8", "obj9", "soc_percent", "soc_percent_warn", "soc_percent_crit", "mode", "inverter_switch_label", "pumps_switch_label", "fans_switch_label", "tc_switch_label", "startup_instructions", "soc_target_text", "soc_target_text_neg", "soc", "soc__", "obj10", "obj11", "lap", "skidpad_lvbox_pwr", "skidpad_vcu_state", "skidpad_inv_state", "skidpad_pdm_11", "obj12", "skidpad_inverter_on", "skidpad_inverter_off", "skidpad_pumps_on", "skidpad_pumps_off", "skidpad_fans_on", "skidpad_fans_off", "skidpad_tc_on", "skidpad_tc_off", "skidpad_battery_ok", "skidpad_battery_warn", "skidpad_battery_crit", "skidpad_motor_ok", "skidpad_motor_warn", "skidpad_motor_cit", "skidpad_inverter_ok", "skidpad_inverter_warn", "skidpad_inverter_cit", "obj13", "skidpad_inverter_temp", "skidpad_inverter_temp_4", "skidpad_inverter_temp_5", "skidpad_motor_temp", "skidpad_inverter_temp_6", "skidpad_battery_temp", "obj14", "obj15", "obj16", "obj17", "obj18", "obj19", "obj20", "obj21", "skidpad_soc_percent", "skidpad_soc_percent_warn", "skidpad_soc_percent_crit", "skidpad_mode", "skidpad_inverter_switch_label", "skidpad_pumps_switch_label", "skidpad_fans_switch_label", "skidpad_tc_switch_label", "skidpad_startup_instructions", "skidpad_soc", "obj22", "accel_inv_state", "accel_pdm_11", "obj23", "obj24", "accel_inverter_on", "accel_inverter_off", "accel_pumps_on", "accel_pumps_off", "accel_fans_on", "accel_fans_off", "accel_tc_on", "accel_tc_off", "accel_battery_ok", "accel_battery_warn", "accel_battery_crit", "accel_motor_ok", "accel_motor_warn", "accel_motor_cit", "accel_inverter_ok", "accel_inverter_warn", "accel_inverter_cit", "obj25", "accel_inverter_temp", "accel_inverter_temp_4", "accel_inverter_temp_5", "accel_motor_temp", "accel_inverter_temp_6", "accel_battery_temp", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "obj32", "accel_soc_percent", "accel_soc_percent_warn", "accel_soc_percent_crit", "accel_mode", "accel_inverter_switch_label", "accel_pumps_switch_label", "accel_fans_switch_label", "accel_tc_switch_label", "obj33", "obj34", "obj35", "accel_launch_header", "obj36", "accel_startup_instructions", "accel_lc_status", "accel_lc_status_go", "accel_lc_status_fault", "accel_lc_hint", "accel_lc_arm_bar", "accel_lc_fault_reason", "accel_lc_shadow", "accel_slip_warn", "accel_speed", "accel_slip", "accel_vcu_state", "accel_lvbox_pwr", "soc_label", "dyno_title", "obj37", "dyno_counter_caption", "dyno_counter", "obj38", "dyno_state_caption", "dyno_state", "dyno_no_vcu", "debug_title", "debug_vcu", "debug_link_ok", "debug_link_lost", "obj39", "obj40", "obj41", "obj42", "obj43", "obj44", "obj45", "obj46", "obj47", "obj48", "obj49", "obj50", "obj51", "obj52", "obj53", "obj54", "obj55", "obj56", "obj57", "obj58", "obj59", "obj60", "obj61", "obj62", "obj63", "obj64", "obj65", "obj66", "obj67", "obj68", "obj69", "obj70", "obj71", "obj72", "obj73", "obj74", "obj75", "obj76", "obj77", "obj78", "obj79", "obj80", "obj81", "obj82", "sponsors_title", "obj83", "sponsors_logo_uos", "sponsors_dot_0", "sponsors_dot_on_0", "sponsors_logo_sfs", "sponsors_dot_1", "sponsors_dot_on_1", "sponsors_logo_vector", "sponsors_dot_2", "sponsors_dot_on_2", "sponsors_logo_rfpro", "sponsors_dot_3", "sponsors_dot_on_3", "sponsors_logo_about_energy", "sponsors_dot_4", "sponsors_dot_on_4", "splash_image", "game_well", "game_title", "game_rows_label", "game_rows_value", "game_best_label", "game_best_value", "game_help", "game_msg" };
+static const char *object_names[] = { "main", "skidpad", "accel", "dyno", "debug", "sponsors", "splash", "game", "lvbox_pwr", "vcu_state", "inv_state", "pdm_11", "obj0", "lap_number", "inverter_on", "inverter_off", "pumps_on", "pumps_off", "fans_on", "fans_off", "tc_on", "tc_off", "battery_ok", "battery_warn", "battery_crit", "motor_ok", "motor_warn", "motor_cit", "inverter_ok", "inverter_warn", "inverter_cit", "obj1", "inverter_temp", "inverter_temp_4", "inverter_temp_5", "motor_temp", "inverter_temp_6", "battery_temp", "obj2", "obj3", "obj4", "obj5", "obj6", "obj7", "obj8", "obj9", "soc_percent", "soc_percent_warn", "soc_percent_crit", "mode", "inverter_switch_label", "pumps_switch_label", "fans_switch_label", "tc_switch_label", "startup_instructions", "soc_target_text", "soc_target_text_neg", "soc", "soc__", "obj10", "obj11", "lap", "skidpad_lvbox_pwr", "skidpad_vcu_state", "skidpad_inv_state", "skidpad_pdm_11", "obj12", "skidpad_inverter_on", "skidpad_inverter_off", "skidpad_pumps_on", "skidpad_pumps_off", "skidpad_fans_on", "skidpad_fans_off", "skidpad_tc_on", "skidpad_tc_off", "skidpad_battery_ok", "skidpad_battery_warn", "skidpad_battery_crit", "skidpad_motor_ok", "skidpad_motor_warn", "skidpad_motor_cit", "skidpad_inverter_ok", "skidpad_inverter_warn", "skidpad_inverter_cit", "obj13", "skidpad_inverter_temp", "skidpad_inverter_temp_4", "skidpad_inverter_temp_5", "skidpad_motor_temp", "skidpad_inverter_temp_6", "skidpad_battery_temp", "obj14", "obj15", "obj16", "obj17", "obj18", "obj19", "obj20", "obj21", "skidpad_soc_percent", "skidpad_soc_percent_warn", "skidpad_soc_percent_crit", "skidpad_mode", "skidpad_inverter_switch_label", "skidpad_pumps_switch_label", "skidpad_fans_switch_label", "skidpad_tc_switch_label", "skidpad_startup_instructions", "skidpad_soc", "obj22", "accel_inv_state", "accel_pdm_11", "obj23", "obj24", "accel_inverter_on", "accel_inverter_off", "accel_pumps_on", "accel_pumps_off", "accel_fans_on", "accel_fans_off", "accel_tc_on", "accel_tc_off", "accel_battery_ok", "accel_battery_warn", "accel_battery_crit", "accel_motor_ok", "accel_motor_warn", "accel_motor_cit", "accel_inverter_ok", "accel_inverter_warn", "accel_inverter_cit", "obj25", "accel_inverter_temp", "accel_inverter_temp_4", "accel_inverter_temp_5", "accel_motor_temp", "accel_inverter_temp_6", "accel_battery_temp", "obj26", "obj27", "obj28", "obj29", "obj30", "obj31", "obj32", "accel_soc_percent", "accel_soc_percent_warn", "accel_soc_percent_crit", "accel_mode", "accel_inverter_switch_label", "accel_pumps_switch_label", "accel_fans_switch_label", "accel_tc_switch_label", "obj33", "obj34", "obj35", "accel_launch_header", "obj36", "accel_startup_instructions", "accel_lc_status", "accel_lc_status_go", "accel_lc_status_fault", "accel_lc_hint", "accel_lc_arm_bar", "accel_lc_fault_reason", "accel_lc_shadow", "accel_slip_warn", "accel_speed", "accel_slip", "accel_vcu_state", "accel_lvbox_pwr", "soc_label", "dyno_title", "obj37", "dyno_counter_caption", "dyno_counter", "obj38", "dyno_state_caption", "dyno_state", "dyno_no_vcu", "debug_title", "debug_vcu", "debug_link_ok", "debug_link_lost", "obj39", "obj40", "obj41", "obj42", "obj43", "obj44", "obj45", "obj46", "obj47", "obj48", "obj49", "obj50", "obj51", "obj52", "obj53", "obj54", "obj55", "obj56", "obj57", "obj58", "obj59", "obj60", "obj61", "obj62", "obj63", "obj64", "obj65", "obj66", "obj67", "obj68", "obj69", "obj70", "obj71", "obj72", "obj73", "obj74", "obj75", "obj76", "obj77", "obj78", "obj79", "obj80", "obj81", "obj82", "sponsors_title", "obj83", "sponsors_logo_uos", "sponsors_dot_0", "sponsors_dot_on_0", "sponsors_logo_sfs", "sponsors_dot_1", "sponsors_dot_on_1", "sponsors_logo_vector", "sponsors_dot_2", "sponsors_dot_on_2", "sponsors_logo_rfpro", "sponsors_dot_3", "sponsors_dot_on_3", "sponsors_logo_about_energy", "sponsors_dot_4", "sponsors_dot_on_4", "splash_image", "splash_instructions", "game_well", "game_title", "game_rows_label", "game_rows_value", "game_best_label", "game_best_value", "game_help", "game_msg" };
 
 //
 // Event handlers
@@ -4483,10 +4483,21 @@ void create_screen_splash() {
             // splash_image
             lv_obj_t *obj = lv_img_create(parent_obj);
             objects.splash_image = obj;
-            lv_obj_set_pos(obj, 280, 120);
+            lv_obj_set_pos(obj, 120, 120);
             lv_obj_set_size(obj, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
             lv_img_set_src(obj, &img_splash);
             lv_img_set_zoom(obj, 512);
+        }
+        {
+            // splash_instructions
+            lv_obj_t *obj = lv_label_create(parent_obj);
+            objects.splash_instructions = obj;
+            lv_obj_set_pos(obj, 490, 170);
+            lv_obj_set_size(obj, 300, LV_SIZE_CONTENT);
+            lv_obj_set_style_text_color(obj, lv_color_hex(0xffffff), LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_font(obj, &ui_font_b612_36, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_style_text_align(obj, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_label_set_text(obj, "");
         }
     }
     
@@ -4499,12 +4510,22 @@ void delete_screen_splash() {
     lv_obj_del(objects.splash);
     objects.splash = 0;
     objects.splash_image = 0;
+    objects.splash_instructions = 0;
     deletePageFlowState(6);
 }
 
 void tick_screen_splash() {
     void *flowState = getFlowState(0, 6);
     (void)flowState;
+    {
+        const char *new_val = evalTextProperty(flowState, 2, 3, "Failed to evaluate Text in Label widget");
+        const char *cur_val = lv_label_get_text(objects.splash_instructions);
+        if (strcmp(new_val, cur_val) != 0) {
+            tick_value_change_obj = objects.splash_instructions;
+            lv_label_set_text(objects.splash_instructions, new_val);
+            tick_value_change_obj = NULL;
+        }
+    }
 }
 
 void create_screen_game() {

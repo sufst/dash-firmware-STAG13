@@ -1,6 +1,6 @@
 {
   "navigation": {
-    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/0",
+    "selectedUserPageObject": "[Stag13.eez-project]:/userPages/6",
     "selectedGlobalVariableObject": "[Stag13.eez-project]:/variables/globalVariables/77",
     "selectedThemeObject": "[Stag13.eez-project]:/themes/0",
     "selectedBitmapObject": "[Stag13.eez-project]:/bitmaps/0",
@@ -193,17 +193,16 @@
               "type": "tabset",
               "id": "EDITORS",
               "weight": 54.569561041521695,
-              "selected": 2,
               "enableDeleteWhenEmpty": false,
               "enableClose": false,
               "children": [
                 {
                   "type": "tab",
                   "id": "#576565d6-cc4f-492b-9489-89959838145d",
-                  "name": "Debug",
+                  "name": "Splash",
                   "component": "editor",
                   "config": {
-                    "objectPath": "[Stag13.eez-project]:/userPages/4",
+                    "objectPath": "[Stag13.eez-project]:/userPages/6",
                     "permanent": false
                   },
                   "icon": "svg:page"
@@ -1245,6 +1244,23 @@
         "translate": {
           "x": -323,
           "y": -240
+        },
+        "scale": 0.75
+      },
+      "timeline": {
+        "isEditorActive": false,
+        "position": 0,
+        "secondToPx": 200,
+        "scrollLeft": 0
+      }
+    },
+    "[Stag13.eez-project]:/userPages/7[flow-state]": {
+      "selectionFront": {},
+      "selectionBack": {},
+      "transform": {
+        "translate": {
+          "x": -264,
+          "y": -155
         },
         "scale": 0.75
       },

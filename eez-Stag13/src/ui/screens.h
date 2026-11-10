@@ -269,6 +269,7 @@ typedef struct _objects_t {
     lv_obj_t *sponsors_dot_4;
     lv_obj_t *sponsors_dot_on_4;
     lv_obj_t *splash_image;
+    lv_obj_t *splash_instructions;
     lv_obj_t *game_well;
     lv_obj_t *game_title;
     lv_obj_t *game_rows_label;
